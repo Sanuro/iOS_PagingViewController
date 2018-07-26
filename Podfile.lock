@@ -1,0 +1,22 @@
+PODS:
+  - Charts (3.1.1):
+    - Charts/Core (= 3.1.1)
+  - Charts/Core (3.1.1)
+  - Parchment (1.3.0)
+
+DEPENDENCIES:
+  - Charts
+  - Parchment
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Charts
+    - Parchment
+
+SPEC CHECKSUMS:
+  Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
+  Parchment: 3c84b1fd55182e91b2e0f3bf1e4034c387151a46
+
+PODFILE CHECKSUM: 16ddfab72063cfd05aee41d33d35ec4d039a1ce9
+
+COCOAPODS: 1.5.3
