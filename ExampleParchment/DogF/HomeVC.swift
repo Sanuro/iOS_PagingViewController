@@ -10,6 +10,9 @@ import UIKit
 
 class HomeVC: UIViewController {
     var searchActive : Bool = false
+    var firstImgTapped :Bool = false
+    var secondImgTapped :Bool = false
+    var thirdImgTapped :Bool = false
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var rando: [UIImageView]!
@@ -17,7 +20,7 @@ class HomeVC: UIViewController {
     
     @IBAction func firstImageButton(_ sender: UIButton) {
         performSegue(withIdentifier: "SegueInfo", sender: sender)
-        print("first tapped")
+        firstImgTapped = true
     }
     @IBAction func secondImageButton(_ sender: UIButton) {
         performSegue(withIdentifier: "SegueInfo", sender: sender)
@@ -29,6 +32,26 @@ class HomeVC: UIViewController {
         performSegue(withIdentifier: "SegueInfo", sender: sender)
         print("third tapped")
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let segue = segue.destination as! InfoVC
+        
+        if firstImgTapped{
+            segue.dogBreedName = annotation[0].text!
+            print("first tapped")
+
+        }
+        if secondImgTapped{
+            segue.dogBreedName = annotation[1].text!
+            print("second tapped")
+
+        }
+        if thirdImgTapped{
+            segue.dogBreedName = annotation[2].text!
+            print("third tapped")
+        }
+        
     }
 
     
@@ -148,6 +171,7 @@ extension HomeVC: UISearchBarDelegate{
     
 }
 extension UIViewController {
+    
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
