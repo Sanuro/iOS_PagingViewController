@@ -5,12 +5,14 @@ import CoreData
 
 class InfoVC: UIViewController{
     var tableData: [Breed] = []
-    var dogBreedName = ""
+    var dogBreedName = " "
+    var display_these_props = ["Name:", "Origin:", "Size:", "Life span:", "Height:", "Weight:", "Shedding", "Litter size", "Hair length", "Temperament:"]
     
+    @IBOutlet var breedInfoTable: [UILabel]!
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    @IBOutlet weak var tableView: UITableView!
+//    @IBOutlet weak var tableView: UITableView!
     
     @IBAction func infoVCSwipe(_ sender: UISwipeGestureRecognizer) {
         performSegue(withIdentifier: "InfoSegue", sender: self)
@@ -27,8 +29,6 @@ class InfoVC: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
         print("went here")
 //        fetchAllThings()
 //        read_json()
@@ -38,7 +38,6 @@ class InfoVC: UIViewController{
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchAllThings()
-        tableView.reloadData()
     }
     
     func read_json() {
@@ -151,6 +150,25 @@ class InfoVC: UIViewController{
         breedRequest.predicate = pred
         do {
             tableData = try context.fetch(breedRequest)
+            print("This is table data", tableData)
+            if tableData.count >= 1{
+                breedInfoTable[0].text = tableData[0].name
+                breedInfoTable[1].text = tableData[0].origin
+                breedInfoTable[2].text = String(tableData[0].life_span)
+                breedInfoTable[3].text = tableData[0].size
+                breedInfoTable[4].text = String(tableData[0].male_weight)
+                breedInfoTable[5].text = String(tableData[0].female_weight)
+                breedInfoTable[6].text = String(tableData[0].male_height)
+                breedInfoTable[7].text = String(tableData[0].female_height)
+                breedInfoTable[8].text = tableData[0].temperament
+                breedInfoTable[9].text = tableData[0].shedding
+                breedInfoTable[10].text = String(tableData[0].litter_size)
+                breedInfoTable[11].text = String(tableData[0].hair_length)
+            }
+            
+            
+
+
             print("this is table Data", tableData)
             // Here we can store the fetched data in an array
         } catch {
@@ -159,18 +177,25 @@ class InfoVC: UIViewController{
     }
 }
     
-extension InfoVC: UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellOne", for: indexPath)
-        let content = tableData[indexPath.row]
-        cell.textLabel?.text = content.name
-        cell.detailTextLabel?.text = "herro"
-        return cell
-    }
-}
+//extension InfoVC: UITableViewDelegate, UITableViewDataSource {
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return display_these_props.count
+//    }
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        if display_these_props[section] == "height" ||
+//            display_these_props[section]  == "weight" {
+//            return 2
+//        }
+//        else if display_these_props[section] == "temperament" {
+//            return 5
+//        }
+//        return 1
+//    }
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "CellOne", for: indexPath)
+//        let content = tableData[0]
+//        cell.textLabel?.text = content.name
+//        cell.detailTextLabel?.text = "herro"
+//        return cell
+//    }
+//}

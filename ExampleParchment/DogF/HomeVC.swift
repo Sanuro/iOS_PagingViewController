@@ -13,6 +13,7 @@ class HomeVC: UIViewController {
     var firstImgTapped :Bool = false
     var secondImgTapped :Bool = false
     var thirdImgTapped :Bool = false
+    var dog_info_have = ["scottish deerhound", "blood hound", "dandie terrier", "norfolk terrier", "lhasa", "kelpie", "dalmatian", "pomeranian", "cardigan corgi", "toy terrier", "germanshepherd", "silky terrier", "dachshund", "chihuahua", "newfoundland", "labrador", "borzoi", "fox terrier", "border terrier", "bernese mountain", "pug", "rhodesian ridgeback", "wheaten terrier", "chesapeake retriever", "weimaraner", "komondor", "australian cattledog", "samoyed", "bull mastiff", "gordon setter", "bluetick", "malinois", "irish spaniel", "bedlington terrier", "entlebucher", "clumber", "italian greyhound", "cairn", "mexicanhairless", "miniature pinscher", "doberman", "malamute", "norwich terrier", "vizsla", "kuvasz", "great dane", "chow", "shetland sheepdog", "afghan hound", "basenji", "shihtzu", "cocker spaniel", "basset hound", "groenendael", "blenheim spaniel", "whippet", "boxer", "otterhound", "tibetan mastiff", "affenpinscher", "beagle", "norwegian elkhound", "curly retriever", "japanese spaniel", "airedale", "irish terrier", "maltese", "australian terrier", "giant schnauzer", "keeshond", "rottweiler", "tibetan terrier", "irish wolfhound", "sussex spaniel", "patterdale terrier", "kerryblue terrier", "sealyham terrier", "lakeland terrier", "miniature poodle", "appenzeller", "golden retriever", "french bulldog", "akita", "shiba", "briard", "saluki", "flatcoated retriever", "english springer", "english setter", "brittany spaniel", "husky", "scottish terrier", "border collie", "schipperke", "ibizan hound", "miniature schnauzer"]
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var rando: [UIImageView]!
@@ -37,21 +38,8 @@ class HomeVC: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let segue = segue.destination as! InfoVC
-        
-//        if firstImgTapped{
         segue.dogBreedName = annotation[0].text!
-//            print("first tapped")
-//
-//        }
-//        else if secondImgTapped{
-//            segue.dogBreedName = annotation[1].text!
-//            print("second tapped")
-//
-//        }
-//        else if thirdImgTapped{
-//            segue.dogBreedName = annotation[2].text!
-//            print("third tapped")
-//        }
+
         
     }
 
@@ -70,10 +58,6 @@ class HomeVC: UIViewController {
         getDoggy(url:"https://dog.ceo/api/breeds/image/random/3")
     }
 
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(true)
-//        getDoggy(url:"https://dog.ceo/api/breeds/image/random/4")
-//    }
     
     func getDoggy(url : String) {
         var breedname: [String] = []

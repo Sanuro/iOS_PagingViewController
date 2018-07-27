@@ -10,6 +10,7 @@ import UIKit
 
 class StarVC: UIViewController {
 
+    var tableData = ["Test1", "test2", "test3"]
     @IBAction func starUpGest(_ sender: UISwipeGestureRecognizer) {
         
     }
@@ -23,6 +24,11 @@ class StarVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -31,3 +37,32 @@ class StarVC: UIViewController {
     
 
 }
+//extension StarVC: UITableViewDelegate, UITableViewDataSource{
+//    //delete trailing swipe
+//    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+//        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") {action, view, completionHandler in
+//
+//            self.context.delete(self.tableData[indexPath.row])
+//            self.tableData.remove(at: indexPath.row)
+//            self.appDelegate.saveContext()
+//
+//            tableView.deleteRows(at: [indexPath], with: .automatic)
+//            completionHandler(true)
+//        }
+//
+//        var actions = [deleteAction]
+//        //edit
+//        let note = tableData[indexPath.row]
+//        if note.completed == false{
+//            let editAction = UIContextualAction(style: .normal, title: "Edit") {action, view, completionHandler in
+//
+//                self.performSegue(withIdentifier: "addEditSegue", sender: indexPath)
+//                completionHandler(true)
+//            }
+//            editAction.backgroundColor = UIColor.purple
+//            actions.append(editAction)
+//        }
+//
+//        return UISwipeActionsConfiguration(actions: actions)
+//    }
+//}
