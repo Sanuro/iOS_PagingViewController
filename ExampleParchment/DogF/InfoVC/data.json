@@ -60,6 +60,774 @@
         "inches"
       ]
    },
+   "bernese mountain":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        24.5,
+       "inches"
+     ],
+    "litter size":[
+        7.5,
+       ""
+     ],
+    "size":[
+       "extra large"
+     ],
+    "temperament":[
+       "active",
+       "affectionate",
+       "aggressive",
+       "alert",
+       "aloof with strangers",
+       "cheerful",
+       "loyal",
+       "quiet",
+       "serious",
+       "social"
+     ],
+    "female weight":[
+        87.35,
+       "lb  (pounds)"
+     ],
+    "AKC recognition year":[
+       "1937  (81 years ago)"
+     ],
+    "origin":[
+       "Switzerland"
+     ],
+    "hair length":[
+       "long"
+     ],
+    "UKC recognition year":[
+       "1948  (70 years ago)"
+     ],
+    "male weight":[
+        94.85,
+       "lb  (pounds)"
+     ],
+    "life span":[
+        8.5,
+       "years"
+     ],
+    "shedding":[
+       "heavy"
+     ],
+    "male height":[
+        26.25,
+       "inches"
+     ]
+  },
+  "blenheim spaniel":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        10.5,
+       "inches"
+     ],
+     "male height":[
+        10.5,
+       "inches"
+     ],
+    "female weight":[
+        10.99,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        10.99,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "toy"
+    ],
+    "life span":[
+        11,
+        "years"
+    ],
+    "litter size":[
+        2.5,
+       ""
+     ],
+    "hair length":[
+        "long"
+    ],
+    "shedding":[
+        "moderate"
+    ],
+    "AKC recognition year":[
+        "1886  (132 years ago)"
+    ],
+    "UKC recognition year":[
+        "1992  (26 years ago)"
+    ],
+    "origin":[
+        "United Kingdom"
+    ],
+    "temperament":[
+       "active",
+       "affectionate",
+       "gentle",
+       "intelligent",
+       "quiet",
+       "serious",
+       "shy",
+       "social",
+       "tough",
+       "willful"
+    ]
+  },
+  "blood hound":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        25,
+       "inches"
+     ],
+     "male height":[
+        52,
+       "inches"
+     ],
+    "female weight":[
+        89.9,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        99.85,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "extra large"
+    ],
+    "life span":[
+        9,
+        "years"
+    ],
+    "litter size":[
+        9,
+       ""
+     ],
+    "hair length":[
+        "short"
+    ],
+    "shedding":[
+        "moderate"
+    ],
+    "AKC recognition year":[
+        "1885  (133 years ago)"
+    ],
+    "UKC recognition year":[
+        "1914  (104 years ago)"
+    ],
+    "origin":[
+        "Belgium"
+    ],
+    "temperament":[
+       "affectionate",
+       "aggressive towards dogs of the same sex",
+       "gentle",
+       "independent",
+       "loyal",
+       "quiet",
+       "shy",
+       "social",
+       "stubborn",
+       "willful"
+    ]
+  },
+  "boxer":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        22.5,
+       "inches"
+     ],
+     "male height":[
+        24,
+       "inches"
+     ],
+    "female weight":[
+        59.05,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        66.1,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "large"
+    ],
+    "life span":[
+        10.5,
+        "years"
+    ],
+    "litter size":[
+        5.5,
+       ""
+     ],
+    "hair length":[
+        "short"
+    ],
+    "shedding":[
+        "moderate"
+    ],
+    "AKC recognition year":[
+        "1904  (114 years ago)"
+    ],
+    "UKC recognition year":[
+        "1948  (70 years ago)"
+    ],
+    "origin":[
+        "Germany"
+    ],
+    "temperament":[
+       "affectionate",
+       "alert",
+       "diligent",
+       "intelligent",
+       "lively",
+       "loyal",
+       "relaxed",
+       "responsive",
+       "social"
+    ]
+  },
+  "maltese":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        8.17,
+       "inches"
+     ],
+     "male height":[
+        9.11,
+       "inches"
+     ],
+    "female weight":[
+        5,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        5,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "toy"
+    ],
+    "life span":[
+        13,
+        "years"
+    ],
+    "litter size":[
+        3,
+       ""
+     ],
+    "hair length":[
+        "long"
+    ],
+    "shedding":[
+        "light"
+    ],
+    "AKC recognition year":[
+        "1888"
+    ],
+    "UKC recognition year":[
+        "1948"
+    ],
+    "origin":[
+        "Italy"
+    ],
+    "temperament":[
+       "affectionate",
+       "alert",
+       "cheerful",
+       "gentle",
+       "hardy",
+       "intelligent",
+       "responsive",
+       "social"
+    ]
+  },
+  "bluetick":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        23,
+       "inches"
+     ],
+     "male height":[
+        24.5,
+       "inches"
+     ],
+    "female weight":[
+        55,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        67.5,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "NA"
+    ],
+    "life span":[
+        11,
+        "years"
+    ],
+    "litter size":[
+        10,
+       ""
+     ],
+    "hair length":[
+        "NA"
+    ],
+    "shedding":[
+        "NA"
+    ],
+    "AKC recognition year":[
+        "2009"
+    ],
+    "UKC recognition year":[
+        "NA"
+    ],
+    "origin":[
+        "United States"
+    ],
+    "temperament":[
+        "aggressive",
+        "intelligent",
+        "loyal",
+        "social"
+    ]
+  },
+  "bull mastiff":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        25,
+       "inches"
+     ],
+     "male height":[
+        26,
+       "inches"
+     ],
+    "female weight":[
+        110,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        120.5,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "extra large"
+    ],
+    "life span":[
+        9.5,
+        "years"
+    ],
+    "litter size":[
+        8.5,
+       ""
+     ],
+    "hair length":[
+        "short"
+    ],
+    "shedding":[
+        "moderate"
+    ],
+    "AKC recognition year":[
+        "1934"
+    ],
+    "UKC recognition year":[
+        "1948"
+    ],
+    "origin":[
+        "Europe"
+    ],
+    "temperament":[
+        "courageous",
+        "gentle",
+        "hardy",
+        "independent",
+        "intelligent",
+        "loyal",
+        "quiet",
+        "social",
+        "willful"
+    ]
+  },
+  "cairn":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        10.95,
+       "inches"
+     ],
+     "male height":[
+        11.5,
+       "inches"
+     ],
+    "female weight":[
+        15,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        16,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "toy"
+    ],
+    "life span":[
+        13.5,
+        "years"
+    ],
+    "litter size":[
+        7,
+       ""
+     ],
+    "hair length":[
+        "medium"
+    ],
+    "shedding":[
+        "light"
+    ],
+    "AKC recognition year":[
+        "1913"
+    ],
+    "UKC recognition year":[
+        "NA"
+    ],
+    "origin":[
+        "Europe"
+    ],
+    "temperament":[
+      "active",
+      "alert",
+      "cheerful",
+      "friendly",
+      "hardy",
+      "hunting",
+      "independent", 
+      "intelligent",
+      "loyal",
+      "sensitive",
+      "serious",
+      "social",
+      "spirited",
+      "willful"
+    ]
+  },
+  "clumber":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        18,
+       "inches"
+     ],
+     "male height":[
+        19,
+       "inches"
+     ],
+    "female weight":[
+        62.5,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        77.5,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "large"
+    ],
+    "life span":[
+        13,
+        "years"
+    ],
+    "litter size":[
+        5,
+       ""
+     ],
+    "hair length":[
+        "long"
+    ],
+    "shedding":[
+        "heavy"
+    ],
+    "AKC recognition year":[
+        "1884"
+    ],
+    "UKC recognition year":[
+        "NA"
+    ],
+    "origin":[
+        "United Kingdom"
+    ],
+    "temperament":[
+      "affectionate",
+      "aggressive",
+      "aloof with strangers",
+      "detached",
+      "gentle",
+      "hunting",
+      "independent",
+      "intelligent",
+      "loyal",
+      "quiet",
+      "social"
+    ]
+  },
+  "dandie terrier":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        9.49,
+       "inches"
+     ],
+     "male height":[
+      9.49,
+       "inches"
+     ],
+    "female weight":[
+        21,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        21,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "toy"
+    ],
+    "life span":[
+        13.5,
+        "years"
+    ],
+    "litter size":[
+        4,
+       ""
+     ],
+    "hair length":[
+        "long"
+    ],
+    "shedding":[
+        "light"
+    ],
+    "AKC recognition year":[
+        "1886"
+    ],
+    "UKC recognition year":[
+        "NA"
+    ],
+    "origin":[
+        "Europe"
+    ],
+    "temperament":[
+      "affectionate",
+      "aggressive",
+      "alert",
+      "docile",
+      "friendly",
+      "gentle",
+      "hunting",
+      "independent",
+      "intelligent",
+      "loyal",
+      "social",
+      "watchful",
+      "willful"
+    ]
+  },
+  "english springer":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        19,
+       "inches"
+     ],
+     "male height":[
+        20,
+       "inches"
+     ],
+    "female weight":[
+        45,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        47.5,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "medium"
+    ],
+    "life span":[
+        13,
+        "years"
+    ],
+    "litter size":[
+        7.5,
+       ""
+     ],
+    "hair length":[
+        "medium"
+    ],
+    "shedding":[
+        "moderate"
+    ],
+    "AKC recognition year":[
+        "1910"
+    ],
+    "UKC recognition year":[
+        "NA"
+    ],
+    "origin":[
+        "United Kingdom"
+    ],
+    "temperament":[
+      "active",
+      "aggressive", 
+      "alert", 
+      "friendly", 
+      "gentle", 
+      "independent", 
+      "intelligent", 
+      "reserved towards strangers", 
+      "shy", 
+      "social"
+    ]
+  },
+
+  "newfoundland":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        26,
+       "inches"
+     ],
+     "male height":[
+        28.5,
+       "inches"
+     ],
+    "female weight":[
+        110,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        139.5,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "extra large"
+    ],
+    "life span":[
+        10.5,
+        "years"
+    ],
+    "litter size":[
+        8,
+       ""
+     ],
+    "hair length":[
+        "medium"
+    ],
+    "shedding":[
+        "moderate"
+    ],
+    "AKC recognition year":[
+        "1886"
+    ],
+    "UKC recognition year":[
+        "1919"
+    ],
+    "origin":[
+        "Canada"
+    ],
+    "temperament":[
+      "alert",
+      "gentle",
+      "independent",
+      "intelligent",
+      "quiet",
+      "relaxed",
+      "social"
+    ]
+  },
+  "lhasa":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        9.49,
+       "inches"
+     ],
+     "male height":[
+        10.5,
+       "inches"
+     ],
+    "female weight":[
+        15.05,
+        "lb  (pounds)"
+    ],
+    "male weight":[
+        15.05,
+        "lb  (pounds)"
+    ],
+    "size":[
+        "toy"
+    ],
+    "life span":[
+        14,
+        "years"
+    ],
+    "litter size":[
+        4.5,
+       ""
+     ],
+    "hair length":[
+        "long"
+    ],
+    "shedding":[
+        "light"
+    ],
+    "AKC recognition year":[
+        "1935"
+    ],
+    "UKC recognition year":[
+        "1975"
+    ],
+    "origin":[
+        "China"
+    ],
+    "temperament":[
+      "affectionate",
+      "alert",
+      "cheerful",
+      "courageous",
+      "friendly",
+      "gentle",
+      "independent",
+      "intelligent",
+      "lively",
+      "loyal",
+      "quiet",
+      "shy",
+      "social",
+      "tough"
+    ]
+  },
+
   "kelpie":{
      "":[
         "Curly-Coated Retriever"
@@ -119,6 +887,61 @@
         "inches"
       ]
    },
+   "akita":{
+    "":[
+       "Curly-Coated Retriever"
+     ],
+    "female height":[
+        24.5,
+       "inches"
+     ],
+    "litter size":[
+        7.5,
+       ""
+     ],
+    "size":[
+       "large"
+     ],
+    "temperament":[
+       "aggressive",
+       "alert",
+       "gentle",
+       "loyal",
+       "quiet",
+       "relaxed"
+     ],
+    "female weight":[
+        92.4,
+       "lb (pounds)"
+     ],
+    "AKC recognition year":[
+       "1972 (46 years ago)"
+     ],
+    "origin":[
+       "Japan"
+     ],
+    "hair length":[
+       "medium"
+     ],
+    "UKC recognition year":[
+       "1980 (38 years ago)"
+     ],
+    "male weight":[
+        97.4,
+       "lb (pounds)"
+     ],
+    "life span":[
+        12.5,
+       "years"
+     ],
+    "shedding":[
+       "moderate"
+     ],
+    "male height":[
+        26.5,
+       "inches"
+     ]
+  },
   "toy terrier":{
      "":[
         "Curly-Coated Retriever"
