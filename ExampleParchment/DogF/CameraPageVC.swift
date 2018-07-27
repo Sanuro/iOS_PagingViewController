@@ -5,6 +5,8 @@ import CoreML
 
 class CameraPageVC: UIViewController, UIPageViewControllerDelegate, UINavigationControllerDelegate, UIPickerViewDelegate{
     
+    var model : dogclassifier!
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var classifier: UILabel!
     
@@ -36,6 +38,10 @@ class CameraPageVC: UIViewController, UIPageViewControllerDelegate, UINavigation
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        model = dogclassifier()
     }
     
     override func didReceiveMemoryWarning() {
@@ -86,6 +92,12 @@ extension CameraPageVC : UIImagePickerControllerDelegate {
         UIGraphicsPopContext()
         CVPixelBufferUnlockBaseAddress(pixelBuffer!, CVPixelBufferLockFlags(rawValue: 0))
         imageView.image = image
+        
+        guard let prediction = try? model.prediction(data: pixelBuffer!)
+        else{
+            return
+        }
+        classifier.text = "Most Probably \(prediction.classLabel)"
         
     }
     

@@ -28,6 +28,7 @@
 		091E39B3210A85ED0063BA63 /* SearchDog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091E39B1210A85ED0063BA63 /* SearchDog.xib */; };
 		091E39B5210A86C50063BA63 /* RandomDogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E39B4210A86C50063BA63 /* RandomDogCell.swift */; };
 		097235B6210B7468007CC491 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 097235B5210B7468007CC491 /* data.json */; };
+		09E6382E210B92510047E696 /* dogclassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 09E6382D210B92510047E696 /* dogclassifier.mlmodel */; };
 		B5A4AC7840614EC3D9CBC2E8 /* Pods_ExampleParchment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159840BF929FEC067844A012 /* Pods_ExampleParchment.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +77,7 @@
 		091E39B1210A85ED0063BA63 /* SearchDog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchDog.xib; sourceTree = "<group>"; };
 		091E39B4210A86C50063BA63 /* RandomDogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogCell.swift; sourceTree = "<group>"; };
 		097235B5210B7468007CC491 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		09E6382D210B92510047E696 /* dogclassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = dogclassifier.mlmodel; sourceTree = "<group>"; };
 		159840BF929FEC067844A012 /* Pods_ExampleParchment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleParchment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEB60177F34BA26A2F36CD9 /* Pods-ExampleParchment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleParchment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleParchment/Pods-ExampleParchment.release.xcconfig"; sourceTree = "<group>"; };
 		BDC4477EA9A86FCC06D072D4 /* Pods-ExampleParchment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleParchment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleParchment/Pods-ExampleParchment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		09099685210A48B700A3743C /* DogF */ = {
 			isa = PBXGroup;
 			children = (
+				09E6382D210B92510047E696 /* dogclassifier.mlmodel */,
 				09099686210A48CC00A3743C /* CameraPageVC.swift */,
 				09099688210A48EF00A3743C /* HomeVC.swift */,
 				0909967B210A488A00A3743C /* InfoVC */,
@@ -404,6 +407,7 @@
 				09099683210A48AF00A3743C /* StarVC.swift in Sources */,
 				09099679210A480D00A3743C /* UIView+constraints.swift in Sources */,
 				091E39B5210A86C50063BA63 /* RandomDogCell.swift in Sources */,
+				09E6382E210B92510047E696 /* dogclassifier.mlmodel in Sources */,
 				09099687210A48CC00A3743C /* CameraPageVC.swift in Sources */,
 				09099631210A3B9100A3743C /* AppDelegate.swift in Sources */,
 				09099684210A48AF00A3743C /* StarChartVC.swift in Sources */,
