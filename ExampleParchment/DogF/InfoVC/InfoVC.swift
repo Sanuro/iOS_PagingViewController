@@ -8,6 +8,10 @@ class InfoVC: UIViewController{
         performSegue(withIdentifier: "InfoSegue", sender: self)
         
     }
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     @IBAction func unwindSegueInfoVC(segue: UIStoryboardSegue){
         

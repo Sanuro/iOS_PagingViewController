@@ -12,9 +12,25 @@ class HomeVC: UIViewController {
     var searchActive : Bool = false
 
     @IBOutlet weak var searchBar: UISearchBar!
-    
     @IBOutlet var rando: [UIImageView]!
     @IBOutlet var annotation: [UILabel]!
+    
+    @IBAction func firstImageButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "SegueInfo", sender: sender)
+        print("first tapped")
+    }
+    @IBAction func secondImageButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "SegueInfo", sender: sender)
+        print("second tapped")
+        
+    }
+
+    @IBAction func thirdImageButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "SegueInfo", sender: sender)
+        print("third tapped")
+
+    }
+
     
     
     override func viewDidLoad() {
@@ -22,6 +38,8 @@ class HomeVC: UIViewController {
         self.hideKeyboardWhenTappedAround()
 
         searchBar.delegate = self
+        
+        
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)

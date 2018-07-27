@@ -17,9 +17,9 @@ class ViewController: UIViewController {
     
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
     let firstViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController")
-    let secondViewController = storyboard.instantiateViewController(withIdentifier: "CameraViewController")
-    let thirdViewController = storyboard.instantiateViewController(withIdentifier: "InfoViewController")
-    let fourthViewController = storyboard.instantiateViewController(withIdentifier: "StarViewController")
+    let secondViewController = storyboard.instantiateViewController(withIdentifier: "InfoViewController")
+    let thirdViewController = storyboard.instantiateViewController(withIdentifier: "StarViewController")
+    let fourthViewController = storyboard.instantiateViewController(withIdentifier: "CameraViewController")
 
     
     // Initialize a FixedPagingViewController and pass
