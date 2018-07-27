@@ -24,6 +24,9 @@
 		09099687210A48CC00A3743C /* CameraPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09099686210A48CC00A3743C /* CameraPageVC.swift */; };
 		09099689210A48EF00A3743C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09099688210A48EF00A3743C /* HomeVC.swift */; };
 		0909968B210A59EF00A3743C /* IconPagingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909968A210A59EE00A3743C /* IconPagingCell.swift */; };
+		091E39B2210A85ED0063BA63 /* RandomDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E39B0210A85ED0063BA63 /* RandomDog.swift */; };
+		091E39B3210A85ED0063BA63 /* SearchDog.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091E39B1210A85ED0063BA63 /* SearchDog.xib */; };
+		091E39B5210A86C50063BA63 /* RandomDogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091E39B4210A86C50063BA63 /* RandomDogCell.swift */; };
 		B5A4AC7840614EC3D9CBC2E8 /* Pods_ExampleParchment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159840BF929FEC067844A012 /* Pods_ExampleParchment.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +71,9 @@
 		09099686210A48CC00A3743C /* CameraPageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPageVC.swift; sourceTree = "<group>"; };
 		09099688210A48EF00A3743C /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		0909968A210A59EE00A3743C /* IconPagingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconPagingCell.swift; sourceTree = "<group>"; };
+		091E39B0210A85ED0063BA63 /* RandomDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDog.swift; sourceTree = "<group>"; };
+		091E39B1210A85ED0063BA63 /* SearchDog.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchDog.xib; sourceTree = "<group>"; };
+		091E39B4210A86C50063BA63 /* RandomDogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDogCell.swift; sourceTree = "<group>"; };
 		159840BF929FEC067844A012 /* Pods_ExampleParchment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleParchment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DEB60177F34BA26A2F36CD9 /* Pods-ExampleParchment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleParchment.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleParchment/Pods-ExampleParchment.release.xcconfig"; sourceTree = "<group>"; };
 		BDC4477EA9A86FCC06D072D4 /* Pods-ExampleParchment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleParchment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleParchment/Pods-ExampleParchment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +108,9 @@
 		09099624210A3B9100A3743C = {
 			isa = PBXGroup;
 			children = (
+				091E39B0210A85ED0063BA63 /* RandomDog.swift */,
+				091E39B1210A85ED0063BA63 /* SearchDog.xib */,
+				091E39B4210A86C50063BA63 /* RandomDogCell.swift */,
 				0909962F210A3B9100A3743C /* ExampleParchment */,
 				09099647210A3B9200A3743C /* ExampleParchmentTests */,
 				09099652210A3B9200A3743C /* ExampleParchmentUITests */,
@@ -319,6 +328,7 @@
 			files = (
 				0909963E210A3B9200A3743C /* LaunchScreen.storyboard in Resources */,
 				0909963B210A3B9200A3743C /* Assets.xcassets in Resources */,
+				091E39B3210A85ED0063BA63 /* SearchDog.xib in Resources */,
 				0909966B210A406200A3743C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +399,7 @@
 				09099675210A480100A3743C /* ViewController.swift in Sources */,
 				09099683210A48AF00A3743C /* StarVC.swift in Sources */,
 				09099679210A480D00A3743C /* UIView+constraints.swift in Sources */,
+				091E39B5210A86C50063BA63 /* RandomDogCell.swift in Sources */,
 				09099687210A48CC00A3743C /* CameraPageVC.swift in Sources */,
 				09099631210A3B9100A3743C /* AppDelegate.swift in Sources */,
 				09099684210A48AF00A3743C /* StarChartVC.swift in Sources */,
@@ -397,6 +408,7 @@
 				09099689210A48EF00A3743C /* HomeVC.swift in Sources */,
 				0909968B210A59EF00A3743C /* IconPagingCell.swift in Sources */,
 				09099677210A480600A3743C /* IndexViewController.swift in Sources */,
+				091E39B2210A85ED0063BA63 /* RandomDog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

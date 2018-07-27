@@ -9,27 +9,34 @@
 import UIKit
 
 class HomeVC: UIViewController {
+    var searchActive : Bool = false
 
-
-
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     @IBOutlet var rando: [UIImageView]!
     @IBOutlet var annotation: [UILabel]!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
 
+        searchBar.delegate = self
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        for i in 0...3 {
-            getDoggy(index: i)
-        }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        getDoggy(url:"https://dog.ceo/api/breeds/image/random/4")
     }
+
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(true)
+//        getDoggy(url:"https://dog.ceo/api/breeds/image/random/4")
+//    }
     
-    func getDoggy(index: Int) {
+    func getDoggy(url : String) {
+        var breedname: [String] = []
     //         specify the url that we will be sending the GET request to
-        let url = URL(string: "https://dog.ceo/api/breeds/image/random")
+        let url = URL(string: url)
         // create a URLSession to handle the request tasks
         let session = URLSession.shared
         // create a "data task" to make the request and run completion handler
@@ -42,18 +49,34 @@ class HomeVC: UIViewController {
                 // try converting the JSON object to "Foundation Types" (NSDictionary, NSArray, NSString, etc.)
                 if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers) as? NSDictionary {
                     if let status = jsonResult["status"] as? String {
+                        print(jsonResult)
                         if status == "success" {
-                            if let message = jsonResult["message"] as? String {
-                                var breed_name = message.components(separatedBy: "/")
-                                print(breed_name)
-                                let urlmsg = URL(string: message)
-                                let data = try? Data(contentsOf: urlmsg!)
-                                if let imageData = data {
-                                    let image = UIImage(data: imageData)
-                                    DispatchQueue.main.async {
-                                        self.rando[index].image = image
+                            if let message = jsonResult["message"] as? NSArray {
+                                for i in 0...3{
+                                    let msg = message[i] as! String
+                
+                                    breedname.append(msg.components(separatedBy: "/")[4])
+                                    print(breedname)
+                                    let urlmsg = URL(string: msg)
+                                    let data = try? Data(contentsOf: urlmsg!)
+                                    if let imageData = data {
+                                        DispatchQueue.main.async {
+                                            let image = UIImage(data: imageData)
+                                            self.rando[i].image = image
+                                            let right_left = breedname[i].components(separatedBy: "-")
+                                            var real_name = right_left[0]
+                                            if right_left.count > 1 {
+                                                real_name = right_left[1] + " " + right_left[0]
+                                            }
+                                            let real_name1 = real_name.capitalized
+                                            self.annotation[i].text = real_name1
+                                        }
                                     }
                                 }
+                                
+                                
+                                
+                                
                                 print(message)
                             }
                         }
@@ -67,12 +90,56 @@ class HomeVC: UIViewController {
         // to run the completion handler. This is async!
         task.resume()
     }
-//        let url = URL(string: "https://images.dog.ceo/breeds/rottweiler/n02106550_13213.jpg")
-//        let data = try? Data(contentsOf: url!)
-//
-//        if let imageData = data {
-//            let image = UIImage(data: imageData)
-//            return image
-//        }
-//    }
 }
+
+extension HomeVC: UISearchBarDelegate{
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        searchActive = true
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchActive = false
+        
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchActive = false
+        self.searchBar.endEditing(true)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+       // if searchActive == true{
+        let lowercase = searchText.lowercased()
+        let right_left = lowercase.components(separatedBy: " ")
+        var stringurl = ""
+        stringurl = right_left[0]
+        if right_left.count > 1 {
+            stringurl = right_left[1] + "/" + right_left[0]
+        }
+        getDoggy(url:"https://dog.ceo/api/breed/" + stringurl + "/images")
+//        print("we in the if yo")
+        
+
+        print(searchText)
+    }
+    
+    
+}
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
+
+
