@@ -21,5 +21,4 @@ class Info_ChartVC: UIViewController {
         performSegue(withIdentifier: "unwindSegueInfoVCWithSegue", sender: self)
     }
     
-
 }

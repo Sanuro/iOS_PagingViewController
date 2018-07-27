@@ -19,6 +19,7 @@ class HomeVC: UIViewController {
     @IBOutlet var annotation: [UILabel]!
     
     @IBAction func firstImageButton(_ sender: UIButton) {
+        print("frist pressed")
         performSegue(withIdentifier: "SegueInfo", sender: sender)
         firstImgTapped = true
     }
@@ -37,20 +38,20 @@ class HomeVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let segue = segue.destination as! InfoVC
         
-        if firstImgTapped{
-            segue.dogBreedName = annotation[0].text!
-            print("first tapped")
-
-        }
-        if secondImgTapped{
-            segue.dogBreedName = annotation[1].text!
-            print("second tapped")
-
-        }
-        if thirdImgTapped{
-            segue.dogBreedName = annotation[2].text!
-            print("third tapped")
-        }
+//        if firstImgTapped{
+        segue.dogBreedName = annotation[0].text!
+//            print("first tapped")
+//
+//        }
+//        else if secondImgTapped{
+//            segue.dogBreedName = annotation[1].text!
+//            print("second tapped")
+//
+//        }
+//        else if thirdImgTapped{
+//            segue.dogBreedName = annotation[2].text!
+//            print("third tapped")
+//        }
         
     }
 
@@ -66,7 +67,7 @@ class HomeVC: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
-        getDoggy(url:"https://dog.ceo/api/breeds/image/random/4")
+        getDoggy(url:"https://dog.ceo/api/breeds/image/random/3")
     }
 
 //    override func viewWillAppear(_ animated: Bool) {
@@ -93,9 +94,8 @@ class HomeVC: UIViewController {
                         print(jsonResult)
                         if status == "success" {
                             if let message = jsonResult["message"] as? NSArray {
-                                for i in 0...3{
+                                for i in 0...2{
                                     let msg = message[i] as! String
-                
                                     breedname.append(msg.components(separatedBy: "/")[4])
                                     print(breedname)
                                     let urlmsg = URL(string: msg)

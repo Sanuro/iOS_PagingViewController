@@ -29,6 +29,8 @@ class InfoVC: UIViewController{
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        print("went here")
+//        fetchAllThings()
 //        read_json()
         
     }
@@ -141,10 +143,12 @@ class InfoVC: UIViewController{
     }
     
     func fetchAllThings(){
+        print("went into fetch")
         let breedRequest:NSFetchRequest<Breed> = Breed.fetchRequest()
-        
-//        let pred = NSPredicate(format: "name")
-        
+        print(dogBreedName)
+//        let format = "name = " + dogBreedName
+        let pred = NSPredicate(format: "name == %@", dogBreedName.lowercased())
+        breedRequest.predicate = pred
         do {
             tableData = try context.fetch(breedRequest)
             print("this is table Data", tableData)
