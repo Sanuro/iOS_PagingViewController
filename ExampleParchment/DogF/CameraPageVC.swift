@@ -8,7 +8,7 @@ class CameraPageVC: UIViewController, UIPageViewControllerDelegate, UINavigation
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var classifier: UILabel!
     
-    @IBAction func caneraButton(_ sender: UIButton) {
+    @IBAction func caneraButton(_ sender: UISwipeGestureRecognizer) {
         if !UIImagePickerController.isSourceTypeAvailable(.camera){
             return
         }
@@ -19,15 +19,18 @@ class CameraPageVC: UIViewController, UIPageViewControllerDelegate, UINavigation
         cameraPicker.showsCameraControls = true
         
         present(cameraPicker, animated: true)
+        
     }
 
+
     
-    @IBAction func libraryButton(_ sender: UIButton) {
+    @IBAction func libraryButton(_ sender: UISwipeGestureRecognizer) {
         let picker = UIImagePickerController()
         picker.allowsEditing = false
         picker.delegate = self
         present(picker, animated: true)
     }
+
 
     
     override func viewDidLoad() {
@@ -58,8 +61,8 @@ extension CameraPageVC : UIImagePickerControllerDelegate {
         }
         
         
-        UIGraphicsBeginImageContextWithOptions(CGSize(width: 299, height: 299),true,2.0) //
-        image.draw(in: CGRect(x:0,y:0,width: 299, height: 299)) // Converting the image into a bit map image.
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: 227, height: 227),true,2.0) //
+        image.draw(in: CGRect(x:0,y:0,width: 227, height: 227)) // Converting the image into a bit map image.
         let newImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
